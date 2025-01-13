@@ -4,7 +4,7 @@ import { RolesComponent } from './components/roles/roles.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RolesComponent],
+  imports: [RouterOutlet ,RolesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

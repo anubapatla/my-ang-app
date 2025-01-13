@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class RolesComponent {
   firstName :string ="angular tutiorals";
   angularVersion ="Verson 18";
-  version:number= 18;
+  version:number = 18;
   iaActive : boolean = false;
   currentDate : Date = new Date();
 
