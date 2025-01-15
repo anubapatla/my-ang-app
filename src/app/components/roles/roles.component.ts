@@ -14,5 +14,5 @@ export class RolesComponent {
   iaActive : boolean = false;
   currentDate : Date = new Date();
   inputType:string = "checkbox";
-
+  selectedState :string ="";
 }
