@@ -15,4 +15,10 @@ export class RolesComponent {
   currentDate : Date = new Date();
   inputType:string = "checkbox";
   selectedState :string ="";
+  showWelcomeAlert(){
+    alert("welcome angular tutiorals")
+  }
+  showMessage(message: string){
+    alert(message)
+  }
 }
