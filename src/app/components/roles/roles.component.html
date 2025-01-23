@@ -1,5 +1,20 @@
-<p>roles works!</p>
-<div class="row">
+ <p>roles works!</p>
+ <!-- <div class="row">
+    
+    <div class="col-4">
+        <ul>
+            <li> *ngFor="let item of roleList">{{item.roleName}}</li>
+        </ul>
+
+ </div>
+</div> -->
+  @for (item of roleList; track $index) {
+    <p>{{item.name}}</p>
+    <p>{{item.id}}</p>
+    <p>{{item.email}}</p>
+
+ } 
+<!--<div class="row">
     <div class="col-3">
         <p> {{firstName  }}</p>
     </div>
@@ -30,8 +45,8 @@
             <option value="GOA">GOA</option>
         </select>
     </div>
-</div>
-<div class="row">
+</div> -->
+<!-- <div class="row">
     <div class="col-3">
         <button class="btn btn-success"(click)="showWelcomeAlert()">showAlertS</button>
     </div>
@@ -41,7 +56,7 @@
     <div class="col-3">
         <button class="btn btn-success"(click)="showMessage('dot net mesage')">showAlertS</button>
     </div>
-</div>
+</div> -->
 
 
 
