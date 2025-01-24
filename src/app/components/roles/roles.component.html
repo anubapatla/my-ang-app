@@ -1,19 +1,52 @@
  <p>roles works!</p>
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>company</th>
+                </tr>
+            </thead>
+            <tbody>
+                 @for (item of roleList; track $index){
+                    <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.company}}</td>
+                    </tr>
+                 }
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
  <!-- <div class="row">
     
     <div class="col-4">
         <ul>
-            <li> *ngFor="let item of roleList">{{item.roleName}}</li>
+            @for (item of roleList; track $index) {
+                <li> {{item.name}}</li>
+            }
         </ul>
 
  </div>
-</div> -->
-  @for (item of roleList; track $index) {
+</div>   
+  <!-- @for (item of roleList; track $index) {
     <p>{{item.name}}</p>
     <p>{{item.id}}</p>
     <p>{{item.email}}</p>
+ }   -->
+ <!-- <div class="col-4">
+    
+    @for (item of roleList; track $index){<button class="btn btn-warning mx-2"
+      > {{item.company}}</button>} 
+ </div> --> -->
 
- } 
 <!--<div class="row">
     <div class="col-3">
         <p> {{firstName  }}</p>

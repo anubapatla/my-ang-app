@@ -11,10 +11,8 @@ import { IRole } from '../../model/interface/role';
 })
 export class RolesComponent implements OnInit {
 
-
   roleList:IRole[] = [];
   http = inject(HttpClient);
-
 
   ngOnInit(): void {
     this.getAllRoles()
