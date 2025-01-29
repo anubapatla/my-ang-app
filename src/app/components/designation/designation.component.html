@@ -1,1 +1,54 @@
-<p>designation works!</p>
+<div>
+  <button (click)="GetData()">Get Employee Data</button>
+  <table>
+    <thead>
+    <th>
+      Id
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Email
+    </th>
+    <th>
+      Phone
+    </th>
+    <th>
+      Salary
+    </th>
+  </thead>
+  <tbody>
+    @for (item of designationList; track $index){
+      <tr>
+        <td>
+          {{item.id}}
+        </td>
+        <td>
+        {{item.name}}
+      </td>
+        <td>
+        {{item.email}}
+      </td>
+
+        <td>
+        {{item.phone}}
+        </td>
+
+        <td>
+        {{item.salary}}
+        </td>
+      </tr>
+      }
+</tbody>
+
+  </table>
+
+  <button (click)="getEmployee('242cdfb1-c888-4326-a50f-7ae44a7f72f8')">Get Employee Details</button>
+  <p>Id:{{employee?.id}}</p>
+  <p>Id:{{employee?.name}}</p>
+  <p>Id:{{employee?.email}}</p>
+  <p>Id:{{employee?.phone}}</p>
+  <p>Id:{{employee?.salary}}</p>
+</div>
+
